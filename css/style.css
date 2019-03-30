@@ -1,0 +1,202 @@
+/*Estilo de Cada Elemento*/
+body{
+    margin: 0 auto;
+    background: #000 url("../resources/back_log.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-font-smoothing: antialiased;
+}
+.conteiner{
+    max-width: 490px;
+    height: 420px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 120px;
+    border-radius: 24px;
+
+}
+.conteiner img{
+    width: 150px;
+    height: 150px;
+    margin-top: -70px;
+    align-content: center;
+}
+
+.btn-login{
+    cursor: pointer;
+    height: 45px;
+    width: 220px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    background-color: #1db954;
+    border-radius: 25px;
+    border-bottom:  2px solid #065522;
+}
+
+input[type="text"], input[type="password"]{
+    height: 45px;
+    width: 300px;
+    font-size: 20px;
+    margin-bottom: 26px;
+    background-color: transparent;
+    padding-left: 7px;
+    border: none;
+    border-bottom: 2px solid #1db954;
+    color: #fff;
+}
+
+/*Cambia el color de la propiedad Placeholer*/
+::placeholder { color: #a3a2a2; }
+
+
+/*Estilo del mensaje de error*/
+.error{
+    background-color: #E74F4F;
+    position: absolute;
+    top: 0;
+    padding: 10px 0 ;
+    border-radius:  0 0 5px 5px;
+    color: #fff;
+    font: 16px century gothic;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.title{
+    color: #fff;
+    font: 26px century gothic;
+    margin-top: 10px;
+}
+
+p{
+    color: #fff;
+    font: 13px century gothic;
+    margin-top: -0px;
+}
+
+a{
+    color:#1db954;
+    font: 13px century gothic;
+    margin-top: -0px;
+}
+
+/*Iconos en las cajas de texto*/
+.form-input::before{
+    content: "\f007";
+    margin-top: 10px;
+    position: relative;
+    font-family: 'Font Awesome 5 Free';   
+    font-size: 25px;
+    color:#fff;
+}
+
+i{
+    margin-top: 10px;
+    position: relative;
+    font-family: 'Font Awesome 5 Free';   
+    font-size: 23px;
+    padding-right: 5px;
+    color:#fff;
+}
+
+/*Animación al pasar el puntero en los elementos*/
+
+.form-input:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);    
+}
+
+.form-input2:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);    
+}
+
+.grow:hover
+{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.btn-login:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* Media Queries para hacer responsive el sitio*/
+
+@media screen and (max-width: 767px) {
+
+    body {
+    background: url("../resources/back_log.png");
+    }
+
+    .conteiner{
+        max-width: 280px;
+        max-height: 350px;
+    }    
+
+    .conteiner img{
+        width: 100px;
+        height: 100px;
+        margin-top: -60px;
+        align-content: center;
+    }
+    .btn-login{
+        height: 35px;
+        width: 140px;
+        margin-top: 15px;
+        margin-bottom: 25px;
+        font-size: 13px;
+    }
+    
+    input[type="text"], input[type="password"]{
+        height: 35px;
+        width: 190px;
+        font-size: 15px;
+        margin-bottom: 26px;
+    }
+ 
+    .error{
+        font: 11px century gothic;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .title{
+        font: 20px century gothic;
+    }
+    
+    p{
+        font: 10px century gothic;
+    }
+    
+    a{
+        font: 10px century gothic;
+    }
+    
+    .form-input::before{
+        font-size: 20px;
+    }
+    
+    i{
+        font-size: 20px;
+    }
+}
+
+/*
+@media screen and (max-width: 320px) { }
+@media screen and (max-width: 480px) { }
+@media screen and (max-width: 768px) { }
+@media screen and (max-width: 1024px) { }
+*/

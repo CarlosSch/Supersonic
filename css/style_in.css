@@ -1,0 +1,16 @@
+textarea {
+    resize: none;
+}
+body{
+    background-color: #cccccc;
+}
+.conteiner{
+    background-color: #000;
+}
+
+.footerf{
+    height: 10vh;
+    background-color: #000;
+    background: #000;
+  }
+  
